@@ -392,104 +392,25 @@ footer {
 .social-icons a:hover {
     color: var(--accent-color);
 }
-/* 专业装备区样式 */
-#tools {
-    background-color: var(--bg-color); /* 使用和 body 一样的背景色 */
-}
-
-.tools-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 每行四个 */
-    gap: 1.5rem; /* 稍微缩小间距 */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5%;
-}
-
-.tool-item {
+/* 专业工具区样式 */
+#pro-tools {
+    background-color: #fff;
     text-align: center;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 1.5rem;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-.tool-item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.tool-item h4 {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.tool-item p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-/* 客户评价区样式 - 更新后 */
-#testimonials {
-    background-color: var(--bg-color);
-}
-
-.testimonials-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 恢复为每行三个 */
-    gap: 2rem;
+.pro-tools-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5%;
 }
 
-.testimonial-card {
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
+#pro-tools h2 {
+    /* 样式将继承自 section h2，这里无需额外定义 */
+    /* 如果需要微调，可以在这里添加 */
 }
 
-.testimonial-main-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.testimonial-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.testimonial-text {
-    font-style: italic;
-    margin: 0 0 1.5rem 0;
-    flex-grow: 1;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-}
-
-.author-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 0.8rem;
-}
-
-.testimonial-author span {
-    font-weight: bold;
-    color: var(--primary-color);
+.tools-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
 }
