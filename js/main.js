@@ -34,4 +34,39 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // 交互式滚轮动画
+    const reviewsSection = document.querySelector('#reviews');
+    const columns = document.querySelectorAll('.review-column');
+    let scrollPositions = Array.from(columns).map(() => 0);
+    const scrollSpeed = 0.2; // 调整滚动速度
+
+    window.addEventListener('wheel', (e) => {
+        // 检查瀑布流区域是否在视口内
+        const rect = reviewsSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            
+            columns.forEach((column, index) => {
+                // 根据列的奇偶性决定滚动方向
+                if (index % 2 === 0) {
+                    scrollPositions[index] -= e.deltaY * scrollSpeed;
+                } else {
+                    scrollPositions[index] += e.deltaY * scrollSpeed;
+                }
+
+                // 限制滚动的最大和最小距离，防止无限滚动
+                const maxScroll = column.scrollHeight / 2;
+                if (scrollPositions[index] > 0) scrollPositions[index] = 0;
+                if (scrollPositions[index] < -maxScroll) scrollPositions[index] = -maxScroll;
+
+                column.style.transform = `translateY(${scrollPositions[index]}px)`;
+            });
+        }
+    });
+
+    // 初始复制内容以提供滚动空间
+    columns.forEach(column => {
+        const content = column.innerHTML;
+        column.innerHTML += content;
+    });
 });
