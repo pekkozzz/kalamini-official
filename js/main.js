@@ -18,5 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 更多交互功能可以写在这里...
+    // 汉堡菜单功能
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navUl.classList.toggle('active');
+    });
+
+    // 点击菜单链接后自动收起菜单
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navUl.classList.contains('active')) {
+                navUl.classList.remove('active');
+            }
+        });
+    });
 });
