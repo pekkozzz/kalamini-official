@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const reviewsSection = document.querySelector('#reviews');
     const columns = document.querySelectorAll('.review-column');
     let scrollPositions = Array.from(columns).map(() => 0);
-    const scrollSpeed = 0.2; // 调整滚动速度
+    const scrollSpeed = 0.5; // 调大滚动速度
 
     window.addEventListener('wheel', (e) => {
         // 检查瀑布流区域是否在视口内

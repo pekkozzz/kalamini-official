@@ -423,7 +423,7 @@ footer {
 .reviews-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    height: 600px; /* 固定高度 */
+    height: 800px; /* 增加高度 */
     overflow: hidden; /* 隐藏超出部分 */
     position: relative;
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
@@ -460,10 +460,37 @@ footer {
     margin-bottom: 1rem;
 }
 
-.review-card p {
-    margin: 0;
+.review-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.review-content p {
+    margin: 0 0 1rem 0;
     font-size: 0.9rem;
     line-height: 1.5;
+    flex-grow: 1;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.review-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.review-author span {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--text-color);
 }
 
 /* 滚动动画定义 */
