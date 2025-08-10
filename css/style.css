@@ -34,9 +34,17 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.logo img {
+    height: 35px; /* 设置 Logo 高度 */
+    width: auto;
 }
 
 nav ul {
