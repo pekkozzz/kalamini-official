@@ -69,4 +69,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const content = column.innerHTML;
         column.innerHTML += content;
     });
+
+    // 滚动触发动画
+    ScrollReveal({
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+    });
+    ScrollReveal().reveal('.reveal', {
+        origin: 'bottom',
+        interval: 200
+    });
 });
