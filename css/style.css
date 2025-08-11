@@ -364,8 +364,12 @@ footer {
         font-size: 2.5rem;
     }
 
-    .services-container, .pro-tools-container, .reviews-container {
+    .services-container, .pro-tools-container {
         grid-template-columns: 1fr; /* 移动端每行一个 */
+    }
+
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr); /* 移动端两列 */
     }
 
     .about-container {
@@ -516,4 +520,22 @@ footer {
 @keyframes scrollDown {
     0% { transform: translateY(-50%); }
     100% { transform: translateY(0); }
+}
+/* 客户好评区响应式增强 */
+@media (max-width: 1024px) {
+    .reviews-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
 }
