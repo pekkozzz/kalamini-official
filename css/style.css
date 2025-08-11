@@ -444,8 +444,8 @@ footer {
     height: 800px; /* 增加高度 */
     overflow: hidden; /* 隐藏超出部分 */
     position: relative;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 6%, black 90%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 6%, black 90%, transparent);
 }
 
 .reviews-container {
@@ -503,6 +503,7 @@ footer {
     height: 30px;
     border-radius: 50%;
     margin-right: 0.5rem;
+    margin-bottom: 0;
 }
 
 .review-author span {
