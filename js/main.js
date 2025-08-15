@@ -40,26 +40,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const columns = document.querySelectorAll('.review-column');
     
     const reviewsData = [
-        { text: "服务超棒！", author: "一颗小星星", imgSeed: "r1", avatarSeed: "a1", imgHeight: 400 },
-        { text: "我家主子很满意。", author: "今天星期几", imgSeed: "r2", avatarSeed: "a2", imgHeight: 300 },
-        { text: "专业、细心，推荐！", author: "爱吃的小熊", imgSeed: "r3", avatarSeed: "a3", imgHeight: 350 },
-        { text: "解放双手，太棒了。", author: "夏天的风", imgSeed: "r4", avatarSeed: "a4", imgHeight: 450 },
-        { text: "下次还找你们。", author: "月亮不睡我不睡", imgSeed: "r5", avatarSeed: "a5", imgHeight: 380 },
-        { text: "非常可靠的服务。", author: "早睡早起", imgSeed: "r6", avatarSeed: "a6", imgHeight: 350 },
-        { text: "价格公道，服务到位。", author: "泡泡鱼", imgSeed: "r7", avatarSeed: "a7", imgHeight: 420 },
-        { text: "再也不用担心出差了。", author: "风继续吹", imgSeed: "r8", avatarSeed: "a8", imgHeight: 360 },
-        { text: "我的狗狗很喜欢那个小哥。", author: "甜甜的梦", imgSeed: "r9", avatarSeed: "a9", imgHeight: 300 },
-        { text: "满分好评！", author: "追光者", imgSeed: "r10", avatarSeed: "a10", imgHeight: 400 },
-        { text: "服务人员很专业。", author: "蓝色星球", imgSeed: "r11", avatarSeed: "a11", imgHeight: 450 },
-        { text: "App很好用，预约方便。", author: "一只小蜜蜂", imgSeed: "r12", avatarSeed: "a12", imgHeight: 320 },
-        { text: "解决了我的大麻烦。", author: "快乐崇拜", imgSeed: "r13", avatarSeed: "a13", imgHeight: 380 },
-        { text: "值得信赖的品牌。", author: "柠檬树", imgSeed: "r14", avatarSeed: "a14", imgHeight: 340 },
-        { text: "会推荐给朋友的。", author: "飞鸟和蝉", imgSeed: "r15", avatarSeed: "a15", imgHeight: 410 },
-        { text: "非常满意的一次体验。", author: "晴天娃娃", imgSeed: "r16", avatarSeed: "a16", imgHeight: 330 },
-        { text: "细节做得很好。", author: "白日梦想家", imgSeed: "r17", avatarSeed: "a17", imgHeight: 400 },
-        { text: "宠物状态很好。", author: "奔向未来", imgSeed: "r18", avatarSeed: "a18", imgHeight: 370 },
-        { text: "客服回应很及时。", author: "简单爱", imgSeed: "r19", avatarSeed: "a19", imgHeight: 310 },
-        { text: "五星好评！", author: "下一站幸福", imgSeed: "r20", avatarSeed: "a20", imgHeight: 430 }
+        { text: "服务超棒！", author: "一颗小星星", avatarSeed: "a1", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1211754968965_.pic.jpg" },
+        { text: "我家主子很满意。", author: "今天星期几", avatarSeed: "a2", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/3.png" },
+        { text: "专业、细心，推荐！", author: "爱吃的小熊", avatarSeed: "a3", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/20250812-112525.jpeg" },
+        { text: "解放双手，太棒了。", author: "夏天的风", avatarSeed: "a4", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1201754968960_.pic.jpg" },
+        { text: "下次还找你们。", author: "月亮不睡我不睡", avatarSeed: "a5", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/u%3D3541819761%2C3828442254%26fm%3D253%26app%3D138%26f%3DJPEG.jpeg" },
+        { text: "非常可靠的服务。", author: "早睡早起", avatarSeed: "a6", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1151754968875_.pic.jpg" },
+        { text: "价格公道，服务到位。", author: "泡泡鱼", avatarSeed: "a7", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1131754968757_.pic.jpg" },
+        { text: "再也不用担心出差了。", author: "风继续吹", avatarSeed: "a8", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1171754968927_.pic.jpg" },
+        { text: "我的狗狗很喜欢那个小哥。", author: "river", avatarSeed: "a9", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/u%3D3344398029%2C802056103%26fm%3D253%26app%3D138%26f%3DJPEG.jpeg" },
+        { text: "满分好评！", author: "kkkk", avatarSeed: "a10", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1241754968996_.pic.jpg" },
+        { text: "服务人员很专业。", author: "蓝色星球", avatarSeed: "a11", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1221754968976_.pic.jpg" },
+        { text: "App很好用，预约方便。", author: "一只小蜜蜂", avatarSeed: "a12", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1251754969008_.pic.jpg" },
+        { text: "解决了我的大麻烦。", author: "快乐崇拜", avatarSeed: "a13", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/3vdlXnpsmf8D9ktI3tN4eWH1tCr8WaHmXZH_K2SLCH-9ijqymj50mf1q0YCUXJ_W.jpg" },
+        { text: "值得信赖的品牌。", author: "柠檬树", avatarSeed: "a14", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1261754969020_.pic.jpg" },
+        { text: "会推荐给朋友的。", author: "飞鸟和蝉", avatarSeed: "a15", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1191754968947_.pic.jpg" },
+        { text: "非常满意的一次体验。", author: "AAA建材老王", avatarSeed: "a16", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1161754968912_.pic.jpg" },
+        { text: "细节做得很好。", author: "白日梦想家", avatarSeed: "a17", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1231754968987_.pic.jpg" },
+        { text: "宠物状态很好。", author: "奔向未来", avatarSeed: "a18", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/08rNkV8sEgvei1KzpnoDjoe7MkrQQs6-s1G6DGjBz6CM4vXvPU2M4-O9fulXavWg.jpg" },
+        { text: "客服回应很及时。", author: "简单爱", avatarSeed: "a19", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1141754968765_.pic.jpg" },
+        { text: "五星好评！", author: "下一站幸福", avatarSeed: "a20", imgUrl: "https://hk-cdn-static.oss-cn-hangzhou.aliyuncs.com/kalamini/images/tinified/1211754968965_.pic.jpg" }
     ];
 
     function renderReviews() {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const columnIndex = index % columns.length;
             const reviewCard = `
                 <div class="review-card">
-                    <img src="https://picsum.photos/seed/${review.imgSeed}/300/${review.imgHeight}" alt="Review image">
+                    <img src="${review.imgUrl}" alt="Review image">
                     <div class="review-content">
                         <p>"${review.text}"</p>
                         <div class="review-author">
